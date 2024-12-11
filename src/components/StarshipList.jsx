@@ -8,9 +8,9 @@ return(
       <h2>Starship List</h2>
       <ul>
         {starships.map((starship) => (
-          <li key={starship.name}>
-            <StarshipCard starship={starship} />
-          </li>
+          // <li >
+            <StarshipCard key={starship.name} starship={starship} />
+          // </li>
         ))}
       </ul>
     </div>
