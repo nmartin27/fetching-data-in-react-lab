@@ -1,17 +1,17 @@
-import { StarshipService } from "../services/starshipService";
+import { StarshipService, StarshipSearch } from "../services/starshipService";
 import { useState, useEffect } from "react";
 
 
-const StarshipCard = () => {
- const [starships, setStarships] = useState([]);
+const StarshipCard = ({starship}) => {
+//  const [starships, setStarships] = useState([]);
 
-  useEffect(() => {
-   const fetchStarships = async () => {
-    const allStarships = await StarshipService();
-    setStarships(allStarships)
-   }
-   fetchStarships()
-  }, []);
+//   useEffect(() => {
+//    const fetchStarships = async () => {
+//     const allStarships = await StarshipService();
+//     setStarships(allStarships)
+//    }
+//    fetchStarships()
+//   }, []);
 
   return (
     <>

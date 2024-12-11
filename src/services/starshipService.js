@@ -12,4 +12,16 @@ const StarshipService = async () => {
     }
   };
 
-export {StarshipService};
+  const StarshipSearch = async (query) => {
+    try {
+      const response = await fetch(`${BASE_URL}/starships/?search=${query}`);
+      const data = await response.json();
+      console.log(data);
+      return data.results;
+    } catch (error) {
+      console.error("Error Fetching Starships:", error);
+    }
+  };
+  
+
+export {StarshipService, StarshipSearch};
