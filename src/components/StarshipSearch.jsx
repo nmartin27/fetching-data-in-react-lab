@@ -1,5 +1,5 @@
 // import { StarshipService, StarshipSearch } from "../services/starshipService";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const StarshipSearch = ({setSearch}) => {
   const [query, setQuery] = useState('');
@@ -24,8 +24,6 @@ const StarshipSearch = ({setSearch}) => {
           <label>Search Term: </label>
           <input type="text" placeholder="name, class, manufacturer, etc." onChange={handleChange} />
           <input type="submit" value="Search" />
-     
-        <h4>hello</h4>
       </div>
     </>
   );

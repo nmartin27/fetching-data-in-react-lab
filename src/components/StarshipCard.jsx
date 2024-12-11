@@ -14,17 +14,16 @@ const StarshipCard = ({ starship }) => {
   console.log("starship prop:", starship);
 
   if (!starship) {
-    return <p>Loading starship...</p>; // Show loading if starship data is not yet available
+    return <p>Loading starship...</p>;
   }
 
-  // If the starship object is empty (which ideally shouldn't happen if data is valid)
   if (Object.keys(starship).length === 0) {
     return <p>No starships found.</p>;
   }
   
   return (
     <>
-      <h2>Starships</h2>
+      
       <div className="starshipsCardsDiv">
         {/* {starship.map((starship, index) => ( */}
           <div className="starshipsCard" >
